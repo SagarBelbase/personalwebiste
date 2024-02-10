@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://lh3.googleusercontent.com/pw/ABLVV87SGBl21Bc2-HCDA-i3yEIHQX23hmSZpZSqhd4Nlb2R7vf6Hh44C6VeLjlCX6GtSXOzY-A9PtoIuzDTYuBmSLmBOu4LkqddCgw8Ccn_Z4VJtX9BDWX_ipq0BAJtkqZmcOHaHFlTTJ3uT9VTX7JfqTcVxIzC0u93ezys-uCy24kOX6153MKKcIZ7nUI7WDKYK9sIAlWbDisG3F_Ie-LuXvw4hYPAsLwG4XLfZa7hRcS6zu9IH_PbAqA-xMzmtCWDO91TfViwoXu6xaj63w2ateBhd_HhqYO7mJnIFPfo9JUmlKR9IQty__XeBQG0L6xnW1MvzOygx8d__QFuYX36l7ls9DSccZUtT5KTpmdFmgIbvIPfdxLoyRipBmDCLooy54dINQvkZfNetgaccmaOA-xP6nPT12-vZqO4OxE6hN56uPLVareR9cjiXI0zNvo9t0tVOATL_O4SY236bkVDhYbjMzkvDqMj1_vvGyrIZZ_xAyWpqWHNs6i2lfQkOkdn-q_ojDn_h80H6CZUFbkoT8PewqW7Dgyq3Bxgo0z0ECtg1ZO3HbxUEgJ66OjiCkHpvboRMr6-VnIPMnhshPe5iYBA2OglNG82xoai4dKhOKwh1GbpDA0QdaOABqDcQ1S4Qxq_RiAfTbJjVPW2hQsb0Ot-MJoQ7PQsG-oSZe_xqew8TzQIu6WlvP2IKjnQNO742B5zw2Mw_lj63XX87Tzr89lTQ2uKS6oLtLBqLnYGTjv2fBYikhQGTb14etqmP97zEkBDLnpSkrkYvFtpEi4BWEyyp8_rlTEYY3XdTx8NfNfcjdjgsLc5uYuGMI0ewxqEnmZvayJtvF-bhu7aE6uXmUYtkK3j5Otsmjqb1kj8AbHD2J0zqZ0o4YxNKN6giCnPjxN7JI0b-8QyjPdvW8l12TahEQ=w1019-h998-s-no-gm?authuser=0" alt="Profile Picture">
+            <h1>Sagar Belbase</h1>
+            <p>Computer Programmer | Photographer | Traveler</p>
+        </div>
+    </header>
+    
+    <section class="buttons">
+        <div class="container">
+            <button id="education-button" onclick="toggleSection('education')">Education</button>
+            <button id="college-info-button" onclick="toggleSection('college-info')">College Information</button>
+            <button id="life-history-button" onclick="toggleSection('life-history')">My Life</button>
+            <button id="contact-info-button" onclick="toggleSection('contact-info')">Contact Information</button>
+            <button id="about me-button" onclick="toggleSection('about-me')">About Me</button>
+        </div>
+    </section>
+
+    <section class="education">
+        <div class="container">
+            <h2 align="center">Education</h2>
+            <div id="education-options" align="center">
+                <button onclick="toggleSubSection('undergraduate')">Undergraduate Degree</button>
+                <button onclick="toggleSubSection('higher-secondary')">Higher Secondary Education</button>
+                <button onclick="toggleSubSection('primary')">Primary Education</button>
+            </div>
+
+            <subsection class="undergraduate">
+            <div class="sub-sections" id="undergraduate">
+                <h3>Undergraduate Degree</h3>
+                <p>Computer Programming | Niagara College Toronto | Joined: January 2024</p>
+                <p>Niagara College Toronto is a leading institution known for its innovative programs and industry-focused education. The college offers a wide range of programs designed to prepare students for successful careers in various fields.</p>
+                <h3>Course</h3>
+                <p>As part of my undergraduate degree in Computer Programming, I've taken a variety of courses covering topics such as:</p>
+                <ul>
+                <li>Programming Fundamentals</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Development</li>
+                <li>Database Management</li>
+                <li>Software Engineering</li>
+                <li>Mobile App Development</li>
+                </ul>
+                <h3>Learning Outcomes</h3>
+                <ul>
+                <li>Identify, analyze, develop, implement, and document computing requirements</li>
+                <li>Troubleshoot technical problems using appropriate tools and methodologies</li>
+                <li>Maintain secure computing environments</li>
+                <li>Implement robust computing solutions aligned with industry best practices</li>
+                <li>Communicate effectively and collaborate with team members and stakeholders</li>
+                <li>Continuously improve personal and professional development</li>
+                <li>Apply project management principles and tools in computing projects</li>
+                <li>Adhere to ethical, legal, and regulatory requirements in computing solutions</li>
+                <li>Support software system analysis and development based on requirements</li>
+                <li>Contribute to the development, documentation, and maintenance of software systems</li>
+                <li>Apply programming paradigms and design principles to software development</li>
+                <li>Model, design, implement, and maintain data storage solutions</li>
+                <li>Integrate network communications into software solutions</li>
+                <li>Modify structured and unstructured data for modern data architecture</li>
+                </ul>
+            </div>
+
+            <div class="sub-sections" id="higher-secondary">
+                <h3>Higher Secondary Education</h3>
+                <p>High School Name</p>
+                <p>Location</p>
+                <p>Graduated: Year</p>
+            </div>
+
+            <div class="sub-sections" id="primary">
+                <h3>Primary Education</h3>
+                <p>Primary School Name</p>
+                <p>Location</p>
+                <p>Graduated: Year</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="college-info">
+        <div class="container">
+            <h2>College Information</h2>
+            <p>Niagara College Toronto is a leading institution known for its innovative programs and industry-focused education. The college offers a wide range of programs designed to prepare students for successful careers in various fields.</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:bellbasesagar@gmail.com" >bellbasesagar@gmail.com</a></p>
+            <p>Phone: <a href="tel:+14376062211">+1 437 606 2211</a></p>
+            <p>Location: Ontario, Canada</p>
+            <p>LinkedIn: <a href="https://profile.indeed.com/p/sagarb-f6n26ws" target="_blank">Sagar Belbase</a></p>
+        </div>
+    </section>
+
+    <section class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a Programmer by profession with a passion for photography and travel. I love exploring new places and capturing moments through my lens.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sagar Belbase</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.querySelector("." + sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+
+        function toggleSubSection(subSectionId) {
+            var subSections = document.querySelectorAll(".sub-sections");
+            subSections.forEach(function(subSection) {
+                if (subSection.id === subSectionId) {
+                    subSection.style.display = "block";
+                } else {
+                    subSection.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
